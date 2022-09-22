@@ -1,0 +1,17 @@
+version=4
+opts=filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-xml2js-$1/ \
+https://github.com/Leonidas-from-XIV/node-xml2js/tags .*/archive/.*/v?([\d\.]+).tar.gz group
+
+opts=\
+component=node-zap,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-zap-$1/ \
+ https://github.com/nornagon/node-zap/tags .*/archive.*/v?([\d\.]+).tar.gz checksum
+
+opts=\
+component=xmlbuilder,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-xmlbuilder-js-$1/ \
+ https://github.com/oozcitak/xmlbuilder-js/tags .*/archive.*/v?([\d\.]+).tar.gz checksum

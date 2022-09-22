@@ -1,0 +1,12 @@
+{
+  "name"        : "zap",
+  "description" : "A tiny test runner",
+  "keywords"    : ["test", "testing"],
+  "homepage"    : "https://github.com/nornagon/node-zap",
+  "repository"  : { "type" : "git"
+                  , "url"  : "https://github.com/nornagon/node-zap.git" },
+  "author"      : "Jeremy Apthorp <nornagon@nornagon.net>",
+  "bin"         : { "zap": "./bin/zap" },
+  "preferGlobal": true,
+  "version"     : "0.2.9"
+}

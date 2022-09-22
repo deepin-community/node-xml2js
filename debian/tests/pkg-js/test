@@ -1,0 +1,2 @@
+PATH=$PATH:debian/tests/test_modules/node-zap/bin/
+zap

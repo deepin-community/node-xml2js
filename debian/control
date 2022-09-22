@@ -1,0 +1,31 @@
+Source: node-xml2js
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: David Paleino <dapal@debian.org>, Jérémy Lal <kapouer@melix.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends:
+ debhelper-compat (= 13)
+ , coffeescript
+ , node-sax <!nocheck>
+ , dh-sequence-nodejs
+ , node-diff
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-xml2js
+Vcs-Git: https://salsa.debian.org/js-team/node-xml2js.git
+Homepage: https://github.com/Leonidas-from-XIV/node-xml2js
+Rules-Requires-Root: no
+
+Package: node-xml2js
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , node-sax
+ , nodejs
+ , node-diff
+Provides: ${nodejs:Provides}
+Description: simple XML to JavaScript object converter - Node.js module
+ xml2js parses XML using node-sax and converts it to a plain JavaScript
+ object.
+ .
+ Node.js is an event-based server-side javascript engine.
