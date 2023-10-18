@@ -1,0 +1,26 @@
+Description: add fix for coffeescript 2
+ See http://coffeescript.org/v2/#breaking-changes-super-this
+Author: Yadd <yadd@debian.org>
+Forwarded: no
+Last-Update: 2022-06-03
+
+--- a/src/parser.coffee
++++ b/src/parser.coffee
+@@ -26,6 +26,7 @@
+ 
+ class exports.Parser extends events
+   constructor: (opts) ->
++    super opts
+     # if this was called without 'new', create an instance with new and return
+     return new exports.Parser opts unless @ instanceof exports.Parser
+     # copy this versions default options
+--- a/src/xml2js.coffee
++++ b/src/xml2js.coffee
+@@ -11,6 +11,7 @@
+ 
+ class exports.ValidationError extends Error
+   constructor: (message) ->
++    super message
+     @message = message
+ 
+ exports.Builder = builder.Builder

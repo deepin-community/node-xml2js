@@ -7,14 +7,15 @@ Comment: contains only generated files in this directory
 Files-Excluded: lib/*
 
 Files: *
-Copyright: © 2010-2013, Marek Kubica <marek@xivilization.net>
+Copyright: 2010-2013, Marek Kubica <marek@xivilization.net>
 License: Expat
 
 Files: debian/*
-Copyright: © 2011-2012, David Paleino <dapal@debian.org>
+Copyright: 2011-2012, David Paleino <dapal@debian.org>
+ 2019-2023, Yadd <yadd@debian.org>
 License: Expat
 
-Files: node-zap/*
+Files: debian/tests/test_modules/node-zap/*
 Copyright: 2013, Jeremy Apthorp
 License: Expat
 

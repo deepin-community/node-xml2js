@@ -10,7 +10,7 @@ Build-Depends:
  , node-sax <!nocheck>
  , dh-sequence-nodejs
  , node-diff
-Standards-Version: 4.6.0
+Standards-Version: 4.6.2
 Vcs-Browser: https://salsa.debian.org/js-team/node-xml2js
 Vcs-Git: https://salsa.debian.org/js-team/node-xml2js.git
 Homepage: https://github.com/Leonidas-from-XIV/node-xml2js
@@ -21,8 +21,8 @@ Architecture: all
 Depends:
  ${misc:Depends}
  , node-sax
- , nodejs
  , node-diff
+ , nodejs:any
 Provides: ${nodejs:Provides}
 Description: simple XML to JavaScript object converter - Node.js module
  xml2js parses XML using node-sax and converts it to a plain JavaScript
